@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Single Product Detail - Funime | Anime Clothes and Apparels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Single Product details-->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/product1-1.png" width="100%" id="productImg">
+                
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/product1-1.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product1-2.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product1-3.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product1-4.png" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Sweatshirt</p>
+                <h1>Cowboy Bebop Dream Spike Grey Crew Neck Sweatshirt</h1>
+                <h4>Php 50.00</h4>
+                <select>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                    <option>XS</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to cart</a>
+                <h3>Product Details<i class="fa fa-indent"></i> </h3>
+                <br>
+                <p>Rep everyone's favorite crew of space bounty hunters! Cowboy Bebop's been the gateway series
+                   for so many of us, helping to introduce anime to a whole new wave of viewers. And if 'wild west 
+                   shootouts in space and classic kung fu beatdowns' doesn't get you pumped, then we don't what will.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* For product gallery */
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick = function() {
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function() {
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function() {
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function() {
+            productImg.src = smallImg[3].src;
+        }
+    </script>
+</body>
+</html>   
